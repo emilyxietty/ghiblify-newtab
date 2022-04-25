@@ -1,15 +1,15 @@
  /* no scrolling! */
  body {
    overflow: hidden;
-   background-color: #222;
+   background-color: #999;
    margin: 0px;
-   font-family: Calibri;
+   font-family: "Helvetica Neue";
    user-select: none;
  }
 
  /* loading bar */
  #progress-line, #progress-line:before {
-   height: 4px;
+   height: 1px;
    width: 100%;
    margin: 0;
  }
@@ -94,11 +94,11 @@
    left: 0;
    min-height: 100%;
    height: 100%;
-   background-color: #222;
+   background-color: #999;
    background-size: cover;
    background-repeat: no-repeat;
-   filter: brightness(0.5) saturation(0.9) blur(0px) contrast(100%);
-   transition: 0.3s;
+   filter: brightness(1) saturation(0.9) blur(0px) contrast(100%);
+   transition: 0s;
    z-index: 1;
  }
 
@@ -148,11 +148,11 @@
 
  /* the time widget */
  .time {
-   color: rgba(255, 255, 255, 0.5);
-   font-family: "Antic";
+   color: rgba(255, 255, 255, 0.8);
+   font-family: "Helvetica Neue";
    user-select: none;
-   font-weight: 100;
-   font-size: 9vw;
+   font-weight: 500;
+   font-size: 10vw;
    margin-bottom: 12px;
    margin-top: 30px;
    cursor: pointer;
@@ -162,20 +162,20 @@
  /* AM/PM text element */
  .pa {
    color: rgba(255, 255, 255, 0.5);
-   font-family: "Antic";
-   font-weight: 100;
-   font-size: 1vw;
+   font-family: "Helvetica Neue";
+   font-weight: 400;
+   font-size: 2vw;
    position: absolute;
    top: calc(9vw + 5px);
-   right: -7%;
+   right: -20%;
  }
 
  /* time widget element */
  .info {
    color: rgba(255, 255, 255, 0.5);
-   font-family: "Antic";
+   font-family: "Helvetica Neue";
    user-select: none;
-   font-weight: 100;
+   font-weight: 340;
    font-size: calc(12px + .7vw);
    cursor: pointer;
  }
@@ -187,7 +187,7 @@
    color: rgba(255, 255, 255, 0.5);
    background-color: rgba(255, 255, 255, 0) !important;
    font-size: 20px;
-   font-family: "Abel";
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
    font-weight: 100;
    width: 18vw;
    border-color: rgba(255, 255, 255, 0.2) !important;
@@ -244,8 +244,8 @@
    position: absolute;
    background: transparent;
    top: 70%;
-   left: 27%;
-   width: calc(250px + 4vw);
+   right: 5%;
+   width: calc(250px + 10vw);
    z-index: 5;
    opacity: 0;
  }
@@ -253,7 +253,7 @@
  /* setting todolist hover to be visible */
  .todoHover {
    background-color: rgba(0, 0, 0, 0);
-   border-radius: 8px;
+   border-radius: 5px;
  }
 
  .todoHover:hover {
@@ -277,8 +277,8 @@
    height: 100%;
    width: 22px;
    overflow: hidden;
-   font-size: 16px;
-   font-family: "Antic";
+   font-size: 10px;
+   font-family: "Helvetica Neue";
    transition: all .2s cubic-bezier(.68, -0.2, .27, 1.55);
  }
 
@@ -308,8 +308,8 @@
    text-align: center;
    user-select: none;
    color: rgba(255, 255, 255, 0.7);
-   font-size: 24px;
-   font-family: "Abel";
+   font-size: 10px;
+   font-family: "Helvetica Neue";
  }
 
  #bookmarks #bkList,
@@ -377,7 +377,7 @@
 
  #menu:hover,
  #menu.delay {
-   background-color: rgba(0, 0, 0, 0.8);
+   background-color: rgba(0, 0, 0, 0.90);
    width: 235px;
    overflow: auto !important;
    /* firefox scrollbar */
@@ -395,7 +395,7 @@
  #menu.delay .menuText,
  #menu.delay .sliderWrapper,
  #menu.delay .slidecontainer {
-   opacity: 0.6 !important;
+   opacity: 0.9 !important;
    visibility: visible;
    transition: all .17s ease;
  }
@@ -410,11 +410,11 @@
 
  .menuText {
    background-color: rgba(255, 255, 255, 0) !important;
-   color: rgba(255, 255, 255, 0.7);
-   margin-top: 25px;
-   margin-bottom: 10px;
-   font-size: 24px;
-   font-family: "Abel";
+   color: rgba(255, 255, 255, 0.9);
+   margin-top: 15px;
+   margin-bottom: 15px;
+   font-size: 15px;
+   font-family: "Helvetica Neue";
    user-select: none;
    text-align: center;
  }
@@ -430,7 +430,7 @@
    white-space: nowrap;
    z-index: 2;
    border-radius: 7px;
-   font-size: 12px;
+   font-size: 10px;
    transform: translate(-50%, -475%);
    background: rgba(0, 0, 0, 0.9);
    opacity: 0;
@@ -447,7 +447,7 @@
    white-space: nowrap;
    z-index: 2;
    border-radius: 7px;
-   font-size: 12px;
+   font-size: 10px;
    transform: translate(-50%, -270%);
    background: rgba(0, 0, 0, 0.9);
    opacity: 0;
@@ -465,9 +465,9 @@
    background-color: rgba(255, 255, 255, 0.3);
    border: none;
    width: 100px;
-   color: rgba(255, 255, 255, 0.7);
+   color: rgba(255, 255, 255, 0.9);
    padding: 6px 20px;
-   font-family: "Abel";
+   font-family: "Helvetica Neue";
    text-align: center;
    text-decoration: none;
    display: inline-block;
@@ -498,7 +498,7 @@
    margin-left: auto;
    margin-right: auto;
    margin-top: 10px;
-   margin-bottom: 35px;
+   margin-bottom: 10px;
    width: 43px;
  }
 
@@ -779,10 +779,10 @@
  }
 
  .bouncy {
-   -webkit-animation: bouncy 0.6s;
-   animation: bouncy 0.6s;
-   -webkit-animation-duration: 0.6s;
-   animation-duration: 0.6s;
+   -webkit-animation: bouncy 0.2s;
+   animation: bouncy 0.2s;
+   -webkit-animation-duration: 0.2s;
+   animation-duration: 0.2s;
    -webkit-animation-fill-mode: both;
    animation-fill-mode: both;
  }
@@ -820,7 +820,7 @@
    list-style-type: none;
    background: transparent;
    font-size: 16px;
-   font-family: "Antic";
+   font-family: "helvetica neue";
    color: rgba(255, 255, 255, 0.8);
    transition-duration: 0s;
    word-wrap: break-word;
@@ -877,10 +877,10 @@
  .header {
    background-color: transparent;
    padding: 10px 20px;
-   color: rgba(255, 255, 255, 0.6);
-   font-family: "Antic";
-   font-size: calc(16px + .3vw);
-   text-align: center;
+   color: rgba(255, 255, 255, 0.65);
+   font-family: "helvetica neue";
+   font-size: calc(10px + .3vw);
+   text-align: left;
    cursor: move;
  }
 
@@ -900,7 +900,7 @@
    width: 100%;
    float: left;
    font-size: 16px;
-   font-family: "Antic";
+   font-family: "helvetica neue";
    color: rgba(255, 255, 255, 0.7);
    border-top: 1px rgba(255, 255, 255, 0.5);
    background-color: transparent;
@@ -914,7 +914,7 @@
  }
 
  /* reset options */
- /* Customize the label (the container) */
+ /* Customize the lHelvetica Neue (the container) */
  .reset-container {
    display: block;
    position: relative;
