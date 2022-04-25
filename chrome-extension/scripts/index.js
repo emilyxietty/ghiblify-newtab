@@ -672,11 +672,11 @@ function loadInfo() {
       if (infoChosen[i].size == null) {
         size = "";
       } else if (infoChosen[i].size == "small") {
-        size += "calc(8px + .6vw)";
+        size += "calc(6px + .6vw)";
       } else if (infoChosen[i].size == "large") {
-        size += "calc(24px + .6vw)";
-      } else {
         size += "calc(16px + .6vw)";
+      } else {
+        size += "calc(10px + .6vw)";
       }
 
       infoText += '<span style="' + size + '; white-space: nowrap;"' + '>' + window.newTab.back[infoChosen[i].name] + '</span><br>';
@@ -819,7 +819,7 @@ function loadBackground(backJson) {
   if (backJson.support_link) {
     window.newTab.support_link = backJson.support_link;
   } else {
-    window.newTab.support_link = "https://suitangi.github.io/Minimal-Newtab/";
+    window.newTab.support_link = "https://emilyxietty.github.io/";
   }
 
   //loads the support link
@@ -1153,7 +1153,7 @@ $(document).ready(function() {
   console.log("%c--- Danger Zone ---", "color: red; font-size: 25px");
   console.log("%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable a feature or \"hack\", it is likely a scam.", "font-size: 16px;");
   console.log("%cIf you ARE a developer, feel free to check this project out here:", "font-size: 16px;");
-  console.log("%chttps://suitangi.github.io/Minimal-Newtab/", "font-size: 16px;");
+  console.log("%chttps://github.com/emilyxietty/", "font-size: 16px;");
 
   // $('#progress-line').css("display", "flex");
   const configUrl = chrome.runtime.getURL('resources/config.json');
@@ -1348,7 +1348,7 @@ $(document).ready(function() {
       scrollToPreviousElement: false,
       buttons: {
         support: {
-          text: "FAQ",
+          text: "contact",
           btnClass: 'btn-blue',
           action: function() {
             window.location.href = window.newTab.support_link;
