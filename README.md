@@ -1,19 +1,11 @@
-# ![icon](https://raw.githubusercontent.com/suitangi/Minimal-Newtab/master/chrome-extension/icons/icon48.png) Minimal Newtab
-This project is a Google Chrome/Firefox Newtab replacement framework that allows for custom defined lists of backgrounds to be loaded into a minimalistic page such that every time a new tab is opened, a random background is loaded.
+# ![heen-small](https://user-images.githubusercontent.com/40601891/165193208-7c6858ca-cc6c-4a84-bc6e-7fb9e9eccfb2.gif) <span> <span>Ghiblify
+This fork is a Google Chrome Newtab replacement framework that allows for custom defined lists of Studio Ghibli inspired backgrounds to be randomly loaded.
 
-![Screenshot](https://i.imgur.com/hlx28h5.gif)
 
-![Screenshot2](https://raw.githubusercontent.com/suitangi/Minimal-Newtab/master/resources/Images/SC2.png)
+<img width="1440" alt="Screenshot 2022-04-25 at 7 59 44 PM" src="https://user-images.githubusercontent.com/40601891/165193305-089c9431-ef2b-40c2-983b-5b5c566b0dea.png">
 ## Usage
-These are some of the published extensions with this framework:
-* [Shinkai's Newtab](https://suitangi.github.io/Minimal-Newtab/resources/Shinkai's%20Newtab):
-  * [Chrome](https://chrome.google.com/webstore/detail/ojaookiigngaiipdhccdoaalmjpgpigh/)
-  * [Firefox](https://addons.mozilla.org/en-US/firefox/addon/garden-of-words-newtab/)
-* [MTG Art Newtab](https://suitangi.github.io/Minimal-Newtab/resources/MtG%20Art%20Newtab):
-  * [Chrome](https://chrome.google.com/webstore/detail/mtg-art-newtab/nakflbaaglkajjpbfnpjmpjaakbjlpfl)
-  * [Firefox](https://suitangi.github.io/Minimal-Newtab/resources/MtG%20Art%20Newtab)
-
-You can also clone this repository:
+More information on https://suitangi.github.io/Minimal-Newtab/resources/MtG%20Art%20Newtab
+You can clone this repository:
 ```
 git clone https://github.com/suitangi/Minimal-Newtab.git
 ```
@@ -25,14 +17,25 @@ This option allows you to [use your own background lists](#using-your-own-backgr
 - Drag to move the clock
 - Click once to switch between standard 12hr and 24hr time
 
-![change time style](https://i.imgur.com/gsC0Lz5.gif)
 
-### Info Panel:
-- Shows the info about the current background shown
+ 
+ 
+![chrome-capture-2022-3-25 (4)](https://user-images.githubusercontent.com/40601891/165195018-346683bb-0d72-4db7-9be1-799f61d243c0.gif)
+
+ 
+ 
+ 
+ 
+### Movie Info:
+- Shows the movie name, length, year, and a quote
 - Click to show different information and in a different style
 - Drag to move the info widget
-
-![info demo](https://i.imgur.com/vvEC3su.gif)
+ 
+ 
+ 
+ 
+![ghiblify-quotes-demo](https://user-images.githubusercontent.com/40601891/165194111-9bcf62db-2604-4797-97cd-e4c5d5deeb18.gif)
+ 
 
 ### Todo List:
 - Type in the "New Item" box and press Enter to enter a new item
@@ -44,7 +47,13 @@ This option allows you to [use your own background lists](#using-your-own-backgr
 - Drag and drop the item to reorder the list
 - Drag the top of the list (where it says "todo list") to move the widget
 
-![using todo list](https://i.imgur.com/CtGcsnQ.gif)
+
+ 
+  ![chrome-capture-2022-3-25 (2)](https://user-images.githubusercontent.com/40601891/165194432-8af2d46d-c073-4f0e-a6fe-844fbbba5848.gif)
+
+ 
+ 
+ 
 
 ### Search Bar:
 - Drag the top of the search bar to move it
@@ -54,7 +63,8 @@ This option allows you to [use your own background lists](#using-your-own-backgr
 ![Change search engine](https://i.imgur.com/jsSynRH.gif)
 
 ### Menu
-![menu](https://i.imgur.com/RoTnqtU.gif)
+![chrome-capture-2022-3-25 (5)](https://user-images.githubusercontent.com/40601891/165195395-45dfe764-35cc-4301-ada3-bda149823ad8.gif)
+
 - Move the mouse to the left most part of the window to access the menu.
 - Each switch in **Widgets** enables/disables respective widgets
 - Each switch in **Background** enables/disables the respective source of images
@@ -75,79 +85,13 @@ This option allows you to [use your own background lists](#using-your-own-backgr
   - Saturation: adjust the saturation (how colorful) of the background
   - Contrast: adjust the contrast of the background
   - Blur: adjust the blur of the background (default is no blur)
+ 
+ 
+![chrome-capture-2022-3-25 (6)](https://user-images.githubusercontent.com/40601891/165195666-7715bee3-f570-40f8-91db-a22c23d1300a.gif)
 
-![effects demo](https://i.imgur.com/H82sqcW.gif)
-
-### Bookmarks
-- Move the mouse to the right most part of the window to access bookmarks.
-- Folders are drop-down-styled, click on them to see contents
-
-![bookmarks demo](https://i.imgur.com/3fgvKxo.gif)
-
-## Using Your Own Backgrounds
-The `background.json` is styled in such a way:
-
-```json
-{
-  "default": {
-    "link": "default-link",
-    "metadata1": "metadata1",
-    "metadata2": "metadata2"
-  },
-  "info_title": "title of info",
-  "info" : [
-    [{
-      "name": "metadata1",
-      "size": "large"
-      },
-      {
-        "name": "metadata2",
-        "size": "medium"
-      }],
-    [{
-      "name": "metadata2",
-      "size": "small"
-      }]
-  ],
-  "support_link": "http://yoursupportlink.here",
-  "report_embed": "<iframe>HTML embed here</iframe>",
-  "sources": [{
-      "name": "Name of The Source1",
-      "list": [
-        { "link": "link1",
-        "metadata1": "metadata1",
-        "metadata2": "metadata2"
-        },
-        { "link": "link2",
-          "metadata1": "metadata1",
-          "metadata2": "metadata2"
-        }]
-    },
-    {
-      "name": "Source2",
-      "list": [
-        { "link": "link4",
-        "metadata1": "metadata1",
-        "metadata2": "metadata2"
-        },
-        { "link": "link5",
-          "metadata1": "metadata1",
-          "metadata2": "metadata2"
-        }]
-    }
-  ]
-}
-```
-
-The `background.json` name should not be changed and should be in the resources directory.
-The menu for choosing sources will be automatically generated. It takes the title from the `name:` field in the json of each `source`.
-
-More details of the `background.json` can be found [here](https://suitangi.github.io/Minimal-Newtab/resources/Background%20JSON).
 
 ## Other Informataion
-*Disclaimer: I do not own any of the artworks or cinemagraphs used in this extension. Credit goes to their respective owners.*
-
-If there is any issue with copyright or if you're the owner of one of the art, please contact suitangi778@gmail.com to take it down.
+*Art is from the studio ghibli site for personal use.*
 
 ### Browser Permissions
 These are the permission that the `manifest.json` asks for:
@@ -164,20 +108,5 @@ This project uses these jQuery libraries:
 To all the beta test users:
 - [G-Jayakar](https://github.com/G-Jayakar)
 - [DaisyFei](https://github.com/DaisyFei)
+- [suitangi](https://suitangi.github.io/Minimal-Newtab/)
 
-## Change-Log
-```
-1.8.0 Optimization, Standardized modal, Added Advanced Options
-1.7.3 Optimization and small bug fixes
-1.7.2 Updated JQuery Version
-1.7.1 Fixed some issues and bugs
-1.7.0 Made into minimal newtab framework
-1.6.2 Todo list rework
-1.6.1 Todo list new functions: reordering and editing
-1.6.0 Revamped background filter effects system
-1.5.1 Button bug fixes, dynamic menu bugfixes
-1.5.0 Added updated menu and bookmarks panel
-1.4.3 Bug fixes, menu now scrollable, slight font adjustments
-1.4.1 Bug fixes, Added animations for widgets, Background changes
-1.4.0 Original Release: Garden of Words Newtab
-```
